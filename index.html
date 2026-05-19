@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Ano tara? | Bacolod • Iloilo • Guimaras</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Local Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Loading/Splash Panel -->
+  <div id="splash-screen" class="splash-screen">
+    <div class="splash-content">
+      <span class="splash-icon">✈️</span>
+      <h1 class="splash-logo">Ano tara?</h1>
+      <div class="splash-divider"></div>
+      <p class="splash-sub">Curated travel planner for</p>
+      <p class="splash-names">Paolo, Kimzie, Jib, & Vincent</p>
+      <p class="splash-trip">Visayas Expedition • June 21–26, 2026</p>
+      <div class="splash-loader">
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+        <div class="loader-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Wrapper -->
+  <div class="app-container">
+    
+    <!-- App Header -->
+    <header class="app-header">
+      <div class="header-main">
+        <div class="brand">
+          <span class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-.778.099-1.533.284-2.253m0 0A17.919 17.919 0 0012 10.5" />
+            </svg>
+          </span>
+          <div class="brand-text">
+            <h1>Ano tara?</h1>
+            <p>June 21 - 26, 2026</p>
+          </div>
+        </div>
+        <div class="header-badge">
+          <span class="badge-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.109A11.386 11.386 0 0110.081 21a11.378 11.378 0 01-4.887-1.764v-.109A12.269 12.269 0 0015 19.128zM15 18.91c0-1.802-.93-3.385-2.333-4.312M15 18.91V19a12.235 12.235 0 01-1.233.109M10.28 14.597c.486.357.92.77 1.287 1.233m-1.287-1.233a9.07 9.07 0 00-4.08 1.18 4.125 4.125 0 005.367 5.367c1.359 0 2.618-.407 3.67-1.109m-5.037-5.438a9.07 9.07 0 00-3.67 1.109M18 9.75a3 3 0 003-3A3 3 0 0018 3.75a3 3 0 00-3 3A3 3 0 0018 9.75zm-12 0a3 3 0 003-3a3 3 0 00-3-3a3 3 0 00-3 3a3 3 0 003 3zm6 3.75a3 3 0 100-6 3 3 0 000 6z" />
+            </svg>
+          </span>
+          <span>4 Pax • DVO</span>
+        </div>
+      </div>
+      
+      <!-- Route visualizer -->
+      <div class="route-tracker">
+        <span class="route-point active">DVO</span>
+        <span class="route-arrow">✈</span>
+        <span class="route-point">ILO</span>
+        <span class="route-arrow">⛴</span>
+        <span class="route-point">BCD</span>
+        <span class="route-arrow">⛴</span>
+        <span class="route-point">ILO</span>
+        <span class="route-arrow">🛶</span>
+        <span class="route-point">GMR</span>
+        <span class="route-arrow">🛶</span>
+        <span class="route-point">ILO</span>
+        <span class="route-arrow">✈</span>
+        <span class="route-point">DVO</span>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="app-main">
+      
+      <!-- ITINERARY TAB -->
+      <section id="tab-itinerary" class="tab-content active">
+        <div class="section-title-bar">
+          <h2>Daily Itinerary</h2>
+          <div class="day-selector" id="day-selector">
+            <!-- Dynamic days will be rendered here -->
+          </div>
+        </div>
+        <!-- Itinerary Progress Bar -->
+        <div class="progress-container itinerary-progress" style="margin-bottom: 20px;">
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="itinerary-progress-bar" style="width: 0%; background: linear-gradient(90deg, var(--primary-color), var(--success-color));"></div>
+          </div>
+          <span class="progress-text" id="itinerary-progress-text">0% Completed (0 of 0 visited)</span>
+        </div>
+        
+        <div id="itinerary-cards-container">
+          <!-- Dynamic timeline items will be rendered here -->
+        </div>
+      </section>
+
+      <!-- BUDGET TAB -->
+      <section id="tab-budget" class="tab-content">
+        <div class="section-title-bar">
+          <h2>Detailed Budget</h2>
+          <div class="budget-toggle-group">
+            <button class="budget-toggle-btn active" id="btn-per-person">Per Person</button>
+            <button class="budget-toggle-btn" id="btn-total-group">Total (4 Pax)</button>
+          </div>
+        </div>
+
+        <!-- Budget Summary Cards -->
+        <div class="budget-summary-grid">
+          <div class="summary-card main-total">
+            <span class="summary-label">Estimated Budget</span>
+            <span class="summary-value" id="budget-grand-total">₱0.00</span>
+            <span class="summary-sub" id="budget-calc-basis">Based on 4 pax (excl. flights)</span>
+          </div>
+          <div class="summary-card-mini-row">
+            <div class="summary-card mini">
+              <span class="summary-label">Accommodation</span>
+              <span class="summary-value mini-val" id="budget-cat-accommodation">₱0</span>
+            </div>
+            <div class="summary-card mini">
+              <span class="summary-label">Transportation</span>
+              <span class="summary-value mini-val" id="budget-cat-transportation">₱0</span>
+            </div>
+            <div class="summary-card mini">
+              <span class="summary-label">Food & Dining</span>
+              <span class="summary-value mini-val" id="budget-cat-food">₱0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Budget Adjustment Panel -->
+        <div class="calculator-panel">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="panel-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+            </svg>
+            Live Cost Customizer
+          </h3>
+          <p class="panel-desc">Adjust variables to see how it affects your group's budget in real-time.</p>
+          <div class="calc-row">
+            <div class="calc-field">
+              <label for="pax-count">Number of Pax</label>
+              <div class="pax-stepper">
+                <button type="button" id="pax-minus">−</button>
+                <input type="number" id="pax-count" value="4" min="1" max="10" readonly>
+                <button type="button" id="pax-plus">+</button>
+              </div>
+            </div>
+            <div class="calc-field">
+              <label for="food-slider">Food Budget (Daily/Pax)</label>
+              <div class="slider-container">
+                <input type="range" id="food-slider" min="300" max="1500" step="50" value="600">
+                <span class="slider-value" id="food-slider-val">₱600</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Itemized Budget List -->
+        <div class="budget-list-container">
+          <div class="budget-list-header">
+            <h3>Itemized Expenses</h3>
+            <span class="filter-badge" id="budget-filter-text">All Items</span>
+          </div>
+          <div class="budget-category-filters" id="budget-cat-filters">
+            <!-- Category bubbles will be loaded dynamically -->
+          </div>
+          <div class="budget-items-list" id="budget-items-list">
+            <!-- Dynamic budget items will be rendered here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- HERITAGE SPOTLIGHTS TAB -->
+      <section id="tab-heritage" class="tab-content">
+        <div class="section-title-bar">
+          <h2>Heritage & Local Experiences</h2>
+        </div>
+        <p class="tab-intro">Things to experience in Bacolod, Iloilo, and Guimaras that are <strong>not found in Davao</strong>—focusing on Spanish-era colonial history, world-renowned local cuisine, and unique geography.</p>
+        
+        <div class="heritage-grid" id="heritage-container">
+          <!-- Dynamic heritage cards will be rendered here -->
+        </div>
+      </section>
+
+      <!-- TRAVEL TIPS TAB -->
+      <section id="tab-tips" class="tab-content">
+        <div class="section-title-bar">
+          <h2>Travel Guide & Ferry Schedules</h2>
+        </div>
+
+        <!-- Ferry Schedules Card -->
+        <div class="tips-card">
+          <div class="card-header-icon-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon teal">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177V3.75A2.25 2.25 0 0012 1.5h-1.5a2.25 2.25 0 00-2.25 2.25v3.823M16.5 7.5V15a2.25 2.25 0 01-2.25 2.25H5.197a2.25 2.25 0 01-2.234-2.01L2.25 9.75M12 18.75v-3" />
+            </svg>
+            <h3>Ferry & Pumpboat Schedules</h3>
+          </div>
+          <div class="ferry-list" id="ferry-schedule-list">
+            <!-- Dynamic ferry schedules here -->
+          </div>
+        </div>
+
+        <!-- Local Contacts Card -->
+        <div class="tips-card">
+          <div class="card-header-icon-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon orange">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-1.514 2.018a14.981 14.981 0 01-6.707-6.707l2.018-1.514c.362-.272.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            <h3>Local Service Contacts</h3>
+          </div>
+          <div class="contact-list" id="local-contacts-list">
+            <!-- Dynamic local contacts here -->
+          </div>
+        </div>
+
+        <!-- Important Rules Card -->
+        <div class="tips-card">
+          <div class="card-header-icon-title">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="card-icon yellow">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
+            </svg>
+            <h3>Important Regional Guidelines</h3>
+          </div>
+          <div class="rules-list" id="regional-rules-list">
+            <!-- Dynamic regional rules here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CHECKLIST TAB -->
+      <section id="tab-checklist" class="tab-content">
+        <div class="section-title-bar">
+          <h2>Packing Checklist</h2>
+          <button class="reset-checklist-btn" id="btn-reset-checklist">Reset Checklist</button>
+        </div>
+        <p class="tab-intro">A checklist designed for your group of 4. Cross off items as you pack them! Your progress will be saved automatically on this device.</p>
+        
+        <!-- Checklist Progress Bar -->
+        <div class="progress-container">
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="checklist-progress-bar" style="width: 0%;"></div>
+          </div>
+          <span class="progress-text" id="checklist-progress-text">0% Complete (0 of 0 packed)</span>
+        </div>
+
+        <div class="checklist-groups" id="checklist-container">
+          <!-- Dynamic checklist groups will be rendered here -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Bottom Navigation Bar (Mobile Native App Style) -->
+    <nav class="app-nav">
+      <button class="nav-btn active" data-tab="itinerary">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+          </svg>
+        </span>
+        <span class="nav-label">Itinerary</span>
+      </button>
+
+      <button class="nav-btn" data-tab="budget">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+          </svg>
+        </span>
+        <span class="nav-label">Budget</span>
+      </button>
+
+      <button class="nav-btn" data-tab="heritage">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918" />
+          </svg>
+        </span>
+        <span class="nav-label">Heritage</span>
+      </button>
+
+      <button class="nav-btn" data-tab="tips">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 111.063.852l-.708 2.836a.75.75 0 001.063.852l.041-.028M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+        <span class="nav-label">Tips</span>
+      </button>
+
+      <button class="nav-btn" data-tab="checklist">
+        <span class="nav-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </span>
+        <span class="nav-label">Checklist</span>
+      </button>
+    </nav>
+
+  </div>
+
+  <!-- Loading scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
