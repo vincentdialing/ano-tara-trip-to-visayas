@@ -89,11 +89,19 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
+    height: 100dvh; /* use dynamic viewport height to fit Safari exactly */
   }
   .app-container {
     height: 100vh;
-    height: -webkit-fill-available;
+    height: 100dvh; /* use dynamic viewport height to fit Safari exactly */
     overflow: hidden;
+  }
+  .app-nav {
+    height: calc(64px + env(safe-area-inset-bottom, 14px)) !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 14px) + 2px) !important;
+  }
+  .app-main {
+    padding-bottom: calc(84px + env(safe-area-inset-bottom, 14px)) !important;
   }
 }
 
