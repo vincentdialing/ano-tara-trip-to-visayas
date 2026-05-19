@@ -64,7 +64,7 @@ body {
   flex-direction: column;
   position: relative;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-  overflow-x: hidden;
+  overflow: hidden; /* Prevent container-level scrollbars */
 }
 
 /* Desktop optimization - center the mobile view nicely */
@@ -78,6 +78,21 @@ body {
     height: 920px;
     border-radius: 32px;
     border: 8px solid #2d3139;
+    overflow: hidden;
+  }
+}
+
+/* Mobile-only viewport lock to prevent double-scrolling and fix bottom navigation bar */
+@media (max-width: 767px) {
+  body {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  .app-container {
+    height: 100vh;
+    height: -webkit-fill-available;
     overflow: hidden;
   }
 }
@@ -1255,11 +1270,11 @@ body {
 
 /* Splash / Loading Screen */
 .splash-screen {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(135deg, var(--primary-color), #09313b);
   display: flex;
   justify-content: center;
