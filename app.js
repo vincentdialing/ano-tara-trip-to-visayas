@@ -8,7 +8,7 @@ let state = {
   activeTab: "itinerary",
   activeDay: 1,
   paxCount: 4,
-  foodBudgetPerDay: 600, // standard PHP per day per person
+  foodBudgetPerDay: 350, // student PHP per day per person
   budgetDisplayMode: "person", // "person" or "group"
   activeBudgetFilter: "all",
   checklist: [],
@@ -361,12 +361,11 @@ function calculateDynamicItemCost(name, originalCost, notes = "") {
   const lowerName = name.toLowerCase();
   const lowerNotes = notes.toLowerCase();
 
-  // 1. Food Scaling
-  // Standard daily food budget is 600 PHP (which was used as baseline for 4 pax in data.js)
+  // Standard daily food budget is 350 PHP (which was used as baseline for 4 pax in data.js)
   // If item is in food, scale it dynamically with custom slider input
   if (lowerName.includes("lunch") || lowerName.includes("dinner") || lowerName.includes("supper") || lowerName.includes("dessert") || lowerName.includes("food") || lowerNotes.includes("meals") || lowerNotes.includes("feast")) {
     const baseCostPerPerson = originalCost / 4;
-    const foodRatio = state.foodBudgetPerDay / 600;
+    const foodRatio = state.foodBudgetPerDay / 350;
     return baseCostPerPerson * state.paxCount * foodRatio;
   }
 

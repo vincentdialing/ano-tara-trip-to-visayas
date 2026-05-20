@@ -1,7 +1,7 @@
 /**
  * Itinerary and Travel Data for Bacolod-Iloilo-Guimaras Trip
- * Dates: June 21-26
- * 4 Pax, Budget-friendly, Heritage & Experience-focused
+ * Student-Friendly Budget Edition (June 21-26)
+ * 4 Pax, Highly Optimized for Student Budgets
  */
 
 const ITINERARY_DATA = [
@@ -9,27 +9,27 @@ const ITINERARY_DATA = [
     day: 1,
     date: "June 21",
     title: "Arrival in Iloilo & Evening Check-in",
-    description: "Land in Iloilo via the evening flight from Davao. Transfer to the city, check in at your budget hotel, and get a good night's rest for an early start tomorrow.",
+    description: "Land in Iloilo via the evening flight from Davao. Transfer to the city using cheap public transit, check in at your budget hostel, and rest for an early start tomorrow.",
     accommodation: {
-      name: "Go Hotels Iloilo or GT Hotel Iloilo",
-      type: "Budget Inn / Hotel (Family Room or 2 Double Rooms)",
-      location: "Iloilo City Center (near Robinsons or City Proper)",
-      estimatedCost: 2200
+      name: "Ong Bun Pension House or Bed & Bath Serviced Suites",
+      type: "Budget Quad Room / Hostel",
+      location: "Iloilo City Proper (near Valeria St. or City Proper)",
+      estimatedCost: 1400
     },
     activities: [
       {
         time: "08:30 PM",
         title: "Touchdown at Iloilo International Airport",
-        desc: "Arrive via night flight from Davao. The airport is located in Cabatuan, about 30-40 minutes from the city center.",
-        cost: 0,
-        notable: "Take a taxi/Grab (₱500 total) or a shared van (₱100/pax) to go directly to your hotel."
+        desc: "Arrive via night flight. The airport is in Cabatuan, 19km from the city center.",
+        cost: 400, // ₱100/pax for the shared airport shuttle van
+        notable: "Skip taxis. Take the shared airport shuttle van (₱100/pax) directly to SM City Iloilo, then a local jeepney (₱15/pax) to your hostel."
       },
       {
-        time: "09:30 PM",
-        title: "Hotel Check-in & Late Supper",
-        desc: "Check in and have a light dinner at a nearby 24/7 convenience store or local diner. Rest early to prepare for the 6:00 AM ferry tomorrow.",
-        cost: 600, // Light supper for 4 pax
-        notable: "Keep your ferry tickets and IDs handy for tomorrow morning."
+        time: "09:45 PM",
+        title: "Hostel Check-in & Late Carenderia Supper",
+        desc: "Check in at your budget pension house and grab a quick, cheap late dinner at a nearby local 24/7 convenience shop or street food carenderia.",
+        cost: 400, // Budget supper for 4 pax
+        notable: "Prepare your Student IDs tonight! You'll need them for discounts tomorrow."
       }
     ],
     tips: "Ensure you book your ferry tickets to Bacolod in advance online if possible, or arrive early at the port tomorrow."
@@ -38,62 +38,62 @@ const ITINERARY_DATA = [
     day: 2,
     date: "June 22",
     title: "Crossing to Bacolod & Silay Heritage Tour",
-    description: "Take the morning fastcraft to Bacolod. Explore Silay City, the 'Paris of Negros,' filled with preserved Spanish-American era sugar baron mansions—a heritage experience completely unique to this region.",
+    description: "Take the morning fastcraft to Bacolod using your student discount. Explore Silay City's sugar-baron heritage houses on a self-guided walking tour, then feast on street-level Bacolod chicken inasal.",
     accommodation: {
       name: "Saltimboca Tourist Inn or Royal Amigo Central",
-      type: "Heritage-style Budget Inn / Hotel (Quad Room)",
+      type: "Budget Inn / Quad Room",
       location: "Lacson Street, Bacolod City",
-      estimatedCost: 1800
+      estimatedCost: 1200
     },
     activities: [
       {
         time: "06:00 AM",
-        title: "Ferry to Bacolod City",
+        title: "Ferry to Bacolod City (Student Rate)",
         desc: "Head to the Iloilo Fastcraft Terminal. Board an OceanJet or Weesam Express vessel bound for Bacolod (1-hour travel time).",
-        cost: 2120, // 4 Tickets (₱500 each) + Terminal Fees (₱30 each)
-        notable: "Enjoy the scenic morning sea view crossing the Guimaras Strait."
+        cost: 1720, // 4 Student Tickets (₱400 each) + Terminal Fees (₱30 each)
+        notable: "Bring your Student ID! Fastcraft operators give a 20% discount on regular tickets."
       },
       {
         time: "08:30 AM",
-        title: "Bacolod Check-in & Travel to Silay",
-        desc: "Drop bags at your Bacolod inn. Hire a tricycle (₱800 for 4 pax, half-day) or take a jeepney north to Silay City (40 mins away).",
-        cost: 950, // Tricycle rent + Bacolod port transfer
-        notable: "Silay has over 30 declared ancestral homes, standing as a testament to the golden era of the sugar industry."
+        title: "Bacolod Check-in & Jeepney to Silay",
+        desc: "Drop bags at your Bacolod inn. Walk to the main road and hop on a Silay-bound jeepney (40 mins away).",
+        cost: 400, // Jeepney fares for the group + port transfer
+        notable: "Jeepneys to Silay are cheap (₱30/pax) and run frequently. A great way to travel like a local!"
       },
       {
         time: "10:00 AM",
-        title: "Balay Negrense & Hofileña Heritage Houses",
+        title: "Balay Negrense & Hofileña Houses (Student Discount)",
         desc: "Step inside these living museums. See how sugar barons lived in the late 19th century, featuring hand-carved hardwood, antique pianos, and classical paintings.",
-        cost: 400, // Entry fees: ~₱100/pax for both houses
-        notable: "The Hofileña house features works by national artists including Juan Luna and Jose Rizal!"
+        cost: 200, // Student Entry fees: ~₱50/pax for both houses
+        notable: "Show your student IDs at the ticket booths to get a 50% discount on entrance fees!"
       },
       {
         time: "12:30 PM",
-        title: "Lunch at El Ideal Bakery & Cafe",
-        desc: "Dine at Silay's oldest bakery (established in the 1920s). Try their famous Guapple Pie and fresh lumpia.",
-        cost: 1000, // Lunch for 4 pax
-        notable: "This heritage bakery is located in the Cesar Lacson Locsin Ancestral House."
+        title: "Lunch at El Ideal Bakery & Cafe (Shared Pastries)",
+        desc: "Dine at Silay's oldest bakery (established in the 1920s). Share fresh lumpia and try their famous Guapple Pie.",
+        cost: 600, // Budget lunch for 4 pax (meal-sharing)
+        notable: "You don't need to order individual pies—split a few slices to keep costs low."
       },
       {
         time: "03:30 PM",
-        title: "San Sebastian Cathedral & Plaza",
-        desc: "Head back to Bacolod. Visit the late 19th-century cathedral made of coral stone from Guimaras and lime from Silay.",
+        title: "San Sebastian Cathedral & Public Plaza",
+        desc: "Head back to Bacolod via jeepney. Visit the late 19th-century cathedral made of coral stone from Guimaras.",
         cost: 0,
-        notable: "Directly opposite is the Bacolod Public Plaza, the center of the world-famous MassKara Festival."
+        notable: "Directly opposite is the Bacolod Public Plaza, the center of the world-famous MassKara Festival. Completely free to visit."
       },
       {
         time: "06:30 PM",
-        title: "Dinner at Manokan Country",
+        title: "Dinner at Manokan Country (Aida's or Nena's)",
         desc: "Feast on authentic Bacolod Chicken Inasal. Savor chicken basted with annatto oil, paired with garlic rice, and dipped in local 'sinamak' (spiced coconut vinegar) and calamansi.",
-        cost: 800, // Huge feast for 4 pax
-        notable: "Unlike Davao inasal, authentic Bacolod inasal uses 'batwan' fruit as a souring agent, cooked over open-flame charcoal."
+        cost: 500, // Budget feast for 4 pax
+        notable: "Inasal is incredibly cheap here. Order standard pieces with garlic rice for a highly satisfying ₱125/pax meal."
       },
       {
         time: "08:30 PM",
-        title: "Dessert at Calea Cakes",
-        desc: "End the night at the ultimate dessert haven on Lacson Street. Indulge in their famous Mud Pie, Imported Chocolate Cake, or White Chocolate Cheesecake.",
-        cost: 600, // Slices & drinks for 4
-        notable: "Remarkably premium taste at incredibly pocket-friendly prices (around ₱110-₱140 per slice)."
+        title: "Dessert at Calea Cakes (Shared Slices)",
+        desc: "End the night at the ultimate dessert haven on Lacson Street. Indulge in their famous Mud Pie or White Chocolate Cheesecake.",
+        cost: 350, // 3 Slices to share for 4 pax
+        notable: "Calea is famous for premium taste at very pocket-friendly prices (around ₱110 per slice). Split slices to try different flavors!"
       }
     ],
     tips: "Tricycles in Bacolod charge per passenger (regular routes) but can be rented out flat-rate ('pakyaw') for tourist excursions."
@@ -102,33 +102,33 @@ const ITINERARY_DATA = [
     day: 3,
     date: "June 23",
     title: "The Ruins & Crossing back to Iloilo",
-    description: "Visit the iconic Taj Mahal of Negros—The Ruins in Talisay—in the morning. In the afternoon, ferry back to Iloilo to start exploring its vibrant heritage streets and night life.",
+    description: "Visit the iconic ruins in Talisay in the morning using student entry rates. In the afternoon, ferry back to Iloilo and walk through the historic Calle Real and Esplanade.",
     accommodation: {
-      name: "Go Hotels Iloilo or GT Hotel Iloilo",
-      type: "Budget Inn / Hotel (Family Room or 2 Double Rooms)",
+      name: "Ong Bun Pension House or Bed & Bath Suites",
+      type: "Budget Quad Room / Hostel",
       location: "Iloilo City Proper",
-      estimatedCost: 2200
+      estimatedCost: 1400
     },
     activities: [
       {
         time: "08:00 AM",
-        title: "Morning Tour of 'The Ruins'",
-        desc: "Take a Grab/tricycle to Talisay. Walk through the majestic skeleton of an early 1900s Italianate mansion built by a sugar baron for his Portuguese wife, burned in WWII.",
-        cost: 900, // Entry (₱150/pax) + roundtrip tricycle/Grab (₱300)
-        notable: "The concrete structure was poured with egg whites, giving it a smooth, marble-like texture that glows at sunrise and sunset."
+        title: "Morning Tour of 'The Ruins' (Student Discount)",
+        desc: "Take a Bata-bound jeepney, then a quick tricycle ride to the gate. Explore the iconic concrete skeleton of this early 1900s mansion.",
+        cost: 560, // Student Entry (₱100/pax) + roundtrip jeepney/trike (₱160 total)
+        notable: "Ruins entry offers a discount for students (₱100 instead of ₱150). Don't forget your ID!"
       },
       {
         time: "11:00 AM",
-        title: "Bacolod Souvenir Run & Lunch",
-        desc: "Buy Piaya, Barquillos, and Napoleones at BongBong's or Merci. Have a quick lunch before heading to the port.",
-        cost: 1600, // Lunch (₱800) + basic souvenirs (₱800)
-        notable: "Napoleones (layered puff pastry with custard and glaze) must be eaten fresh!"
+        title: "Bacolod Souvenir Run & Cheap Lunch",
+        desc: "Buy local Piaya from street stalls (much cheaper than big souvenir houses!). Grab a quick carenderia lunch before heading to the port.",
+        cost: 1100, // Lunch (₱500) + budget souvenirs (₱600)
+        notable: "Freshly made Piaya on the street costs only ₱40-50 per pack and tastes even better warm!"
       },
       {
         time: "02:00 PM",
-        title: "Ferry Back to Iloilo City",
-        desc: "Board the fastcraft back to Iloilo port. Check in at your Iloilo hotel and freshen up.",
-        cost: 2310, // 4 Tickets (₱500 each) + Terminal Fees (₱40 each) + taxi to hotel (₱150)
+        title: "Ferry Back to Iloilo City (Student Rate)",
+        desc: "Board the fastcraft back to Iloilo port. Check in at your Iloilo hostel and freshen up.",
+        cost: 1810, // 4 Student Tickets (₱400 each) + Terminal Fees (₱40 each) + jeepney to hostel (₱50)
         notable: "Rest during the 1-hour ferry ride."
       },
       {
@@ -136,14 +136,14 @@ const ITINERARY_DATA = [
         title: "Heritage Walk: Calle Real & Esplanade",
         desc: "Explore Calle Real, a designated heritage zone with restored Art Deco and neoclassical buildings from the early 1900s. Afterwards, stroll along the scenic Iloilo Esplanade.",
         cost: 0,
-        notable: "Iloilo Esplanade is a masterclass in urban river rehabilitation—clean, green, and completely pedestrian-friendly."
+        notable: "Iloilo Esplanade is a masterclass in urban river rehabilitation—clean, green, and completely free to enjoy."
       },
       {
         time: "07:00 PM",
-        title: "Dinner: Authentic La Paz Batchoy",
-        desc: "Dine at Ted's Oldtimer Lapaz Batchoy or Deco's inside La Paz Market. Try the authentic batchoy: fresh egg noodles, pork offal, crushed chicharon, toasted garlic, and hot bone marrow broth.",
-        cost: 600, // Dinner for 4 pax
-        notable: "Unlike instant versions, true La Paz Batchoy has a complex umami broth sweetened by guinamos (local shrimp paste)."
+        title: "Dinner: Authentic La Paz Batchoy inside Market",
+        desc: "Dine at a local stall inside La Paz Market. Try the authentic batchoy: fresh egg noodles, pork offal, crushed chicharon, and hot bone broth.",
+        cost: 400, // Dinner for 4 pax (₱100 each)
+        notable: "Dining inside the local market stalls is much cheaper than in malls or air-conditioned restaurants, and it's the most authentic batchoy experience!"
       }
     ],
     tips: "Keep your bags packed lightly, as you'll be crossing to Guimaras tomorrow morning. You can leave heavy luggage at your Iloilo hotel if returning on Day 5!"
@@ -152,76 +152,76 @@ const ITINERARY_DATA = [
     day: 4,
     date: "June 24",
     title: "Escape to Guimaras & Land Heritage Tour",
-    description: "Take a 15-minute boat ride to Guimaras. Charter a tricycle to tour the island's historical ruins, monastics, wind farms, and checkout the sweet mangoes, then stay overnight at an affordable beachfront resort.",
+    description: "Take a 15-minute boat ride to Guimaras. Charter a shared tricycle to tour the island's historical ruins, monasteries, wind farms, and beach camp in a basic fan room by Alubihod beach.",
     accommodation: {
-      name: "Raymen Beach Resort",
-      type: "Beachfront Resort (Standard Quad Aircon Room)",
+      name: "Raymen Beach Resort or nearby beach houses",
+      type: "Basic Quad Fan Room (Budget/Backpacker)",
       location: "Alubihod Beach, Nueva Valencia, Guimaras",
-      estimatedCost: 3200
+      estimatedCost: 1800
     },
     activities: [
       {
         time: "07:30 AM",
         title: "Pumpboat to Guimaras Island",
-        desc: "Walk/ride to Parola Wharf. Take a quick pumpboat ride to Jordan Port, Guimaras (15 mins).",
-        cost: 350, // Hotel to Parola taxi (₱150) + Boat fares (₱50/pax = ₱200)
-        notable: "Guimaras is so close to Iloilo you can see it from the city proper."
+        desc: "Take a local jeepney to Parola Wharf. Catch a quick pumpboat ride to Jordan Port, Guimaras.",
+        cost: 260, // Jeepney (₱60) + Boat fares (₱50/pax = ₱200)
+        notable: "Public pumpboats run constantly and cost only ₱50 per passenger."
       },
       {
         time: "08:15 AM",
-        title: "Charter Tricycle Land Tour",
-        desc: "Meet your tour driver at Jordan Port. Load your bags and start the 8-hour land tour in a custom passenger tricycle.",
-        cost: 1800, // Flat rate pakyaw for 4 pax
-        notable: "This is the most cost-effective and fun way to see the island. Drivers are accredited guides."
+        title: "Charter Tricycle Land Tour (Split Cost)",
+        desc: "Meet your tour driver at Jordan Port. Load your bags and start the 8-hour land tour in a passenger tricycle.",
+        cost: 1500, // Negotiated group rate for student budget
+        notable: "This covers up to 4 pax, making it very cheap (₱375/pax) when split among your group."
       },
       {
         time: "09:00 AM",
         title: "Smallest Plaza & Mango Giant",
-        desc: "Quick photo stops at the Smallest Plaza (once in the Guinness Book) and the Giant Mango monument.",
+        desc: "Quick photo stops at the Smallest Plaza and the Giant Mango monument.",
         cost: 0,
-        notable: "Guimaras mangoes are famous for being served in the White House and Buckingham Palace!"
+        notable: "Great spots for group photos without spending a single peso."
       },
       {
         time: "10:00 AM",
-        title: "Trappist Monastery",
-        desc: "Visit the quiet grounds of the only Trappist monastery in the Philippines. Shop for mango jams, cookies, and religious items made by the monks.",
-        cost: 500, // Souvenirs and donations
-        notable: "The peaceful, tree-lined sanctuary offers a quiet contrast to busy city itineraries."
+        title: "Trappist Monastery Grounds",
+        desc: "Visit the quiet grounds of the Trappist monastery. Shop for budget mango snacks made by the monks.",
+        cost: 300, // Budget snacks/cookies
+        notable: "Entry is free. Buy small packs of Trappist mango cookies (₱50-80) to support their community."
       },
       {
         time: "11:30 AM",
         title: "San Lorenzo Wind Farm",
-        desc: "Get up close to the towering 54-megawatt wind turbines spinning on the rolling hills.",
+        desc: "Get up close to the towering wind turbines spinning on the rolling green hills.",
         cost: 0,
-        notable: "Unlike the windmills in Ilocos, these are scattered across green agricultural hills, offering a unique inland landscape."
+        notable: "No entry fee. Walk around the viewpoints for amazing panoramic views."
       },
       {
         time: "12:30 PM",
-        title: "Lunch at The Pitstop Restaurant",
-        desc: "Try their famous Mango Pizza (sweet mango slices, cheese, bell pepper) and Mango Bulalo.",
-        cost: 1200, // Lunch for 4 pax
-        notable: "A weird-sounding but delicious sweet-and-savory combination that you cannot find in Davao."
+        title: "Lunch at The Pitstop (Shared Mango Pizza)",
+        desc: "Try their famous Mango Pizza (sweet mango slices, cheese, bell pepper) and local rice meals.",
+        cost: 700, // Pizza to share + basic meals
+        notable: "Order one medium mango pizza (₱300) to share, and pair it with basic budget rice meals."
       },
       {
         time: "02:30 PM",
-        title: "Guisi Lighthouse & Ruins",
-        desc: "Explore the 18th-century Spanish colonial lighthouse ruins. Walk through the ancient stone walls covered in banyan roots overlooking the golden beach.",
-        cost: 200, // Entrance fee (₱50/pax)
-        notable: "Guisi is the second-oldest lighthouse in the country. The rusted iron tower and stone ruins feel like an Indiana Jones set."
+        title: "Guisi Lighthouse & Ruins (Student Discount)",
+        desc: "Explore the 18th-century Spanish colonial lighthouse ruins covered in roots overlooking the golden beach.",
+        cost: 100, // Student Entrance fee (₱25/pax)
+        notable: "Present your student ID for a 50% discount on the preservation fee!"
       },
       {
         time: "04:30 PM",
         title: "Resort Check-in at Alubihod Beach",
-        desc: "Arrive at Raymen Beach Resort in Nueva Valencia. Check in, change into swimwear, and enjoy the powdery cream sand and calm waters.",
+        desc: "Arrive at Alubihod Beach. Check into your basic quad fan room. Enjoy the powdery cream sand and calm waters.",
         cost: 0,
-        notable: "Alubihod is the jump-off point for island hopping tomorrow."
+        notable: "Choosing a fan room instead of aircon saves you over ₱1,400 per night!"
       },
       {
         time: "07:00 PM",
-        title: "Beachfront Seafood Dinner",
-        desc: "Have a relaxed, budget-friendly dinner at the resort's restaurant or a nearby local eatery right by the sand.",
-        cost: 1000, // Dinner for 4 pax
-        notable: "Listen to the gentle waves while eating fresh grilled fish."
+        title: "Local Carenderia Seafood Dinner",
+        desc: "Have a relaxed seafood dinner at a local carenderia near the beachfront entrance rather than the resort restaurant.",
+        cost: 800, // Dinner for 4 pax
+        notable: "Local diners right outside the resort gates serve fresh grilled fish and oysters for a fraction of resort prices."
       }
     ],
     tips: "Guimaras is primarily cash-only! There are very few ATMs on the island, mostly in Jordan. Withdraw cash in Iloilo before boarding the boat."
@@ -230,48 +230,48 @@ const ITINERARY_DATA = [
     day: 5,
     date: "June 25",
     title: "Island Hopping & Iloilo Culinary Heritage",
-    description: "Enjoy a morning island-hopping tour in Guimaras. Return to Iloilo City in the afternoon for a deep-dive into colonial churches and a feast of fresh Visayan seafood.",
+    description: "Enjoy a shortened 2-hour morning island-hopping tour in Guimaras. Return to Iloilo City in the afternoon and visit local heritage churches using cheap public jeepneys.",
     accommodation: {
-      name: "Go Hotels Iloilo or GT Hotel Iloilo",
-      type: "Budget Inn / Hotel (Family Room or 2 Double Rooms)",
+      name: "Ong Bun Pension House or Bed & Bath Suites",
+      type: "Budget Quad Room / Hostel",
       location: "Iloilo City Proper",
-      estimatedCost: 2200
+      estimatedCost: 1400
     },
     activities: [
       {
         time: "07:30 AM",
-        title: "Guimaras Island Hopping",
-        desc: "Board your motorized outrigger from Alubihod Beach. Visit SEAFDEC (Marine Research Sanctuary), Ave Maria Island (sandbar), and Baras Cave.",
-        cost: 1400, // 3-Hour Boat Rent (₱600 1st hr + ₱150/hr after = ₱900) + SEAFDEC entry & island fees (₱500 total)
-        notable: "At SEAFDEC, you can see massive breeding milkfish, sea bass, and giant groupers in floating cages."
+        title: "Guimaras Island Hopping (2-Hour Boat)",
+        desc: "Board a motorized outrigger from Alubihod Beach. Visit Ave Maria Island (sandbar) and Baras Cave.",
+        cost: 1100, // 2-Hour Boat Rent (₱750) + Island docking fees (₱350 total)
+        notable: "Opt for a 2-hour tour instead of 3 hours to save on boat charter costs. It's plenty of time to see the main spots!"
       },
       {
         time: "11:30 AM",
-        title: "Check Out & Back to Iloilo",
-        desc: "Frescening up, checkout, and catch a tricycle back to Jordan Port, then the boat back to Iloilo.",
-        cost: 900, // Tricycle to Jordan (₱350) + Boat (₱200) + Taxi to Iloilo Hotel (₱150) + Port snacks (₱200)
-        notable: "Grab a quick snack of fresh Guimaras mangoes at the port before crossing."
+        title: "Check Out & Public Boat to Iloilo",
+        desc: "Freshen up, check out, and take a local jeepney back to Jordan Port, then the pumpboat back to Iloilo.",
+        cost: 600, // Jeepney to Jordan (₱300) + Boat (₱200) + Jeepney to hostel (₱100)
+        notable: "Avoid taxis; public transport in Guimaras is regular and highly budget-friendly."
       },
       {
         time: "02:30 PM",
-        title: "Jaro Cathedral & Belfry",
-        desc: "Check in at your Iloilo hotel. Take a jeepney/Grab to Jaro. Visit the Romanesque cathedral featuring a unique outdoor belfry across the street and the stone stairs leading to the miraculous Candelaria shrine.",
-        cost: 100, // Jeepney / Grab fares
-        notable: "Jaro is known as the 'masculine' church because all the statues of saints lining the pillars inside are male."
+        title: "Jaro Cathedral & Belfry via Jeepney",
+        desc: "Check in at your hostel. Take a CPU-bound jeepney to Jaro Plaza. Visit the Romanesque cathedral featuring a unique outdoor belfry across the street.",
+        cost: 60, // Jeepney fares for 4 pax
+        notable: "Jeepneys in Iloilo are legendary and cost only ₱15 per ride!"
       },
       {
         time: "04:00 PM",
         title: "Molo Mansion & Molo Church",
-        desc: "Cross over to Molo. Visit the Gothic-Renaissance Molo Church built of coral stone. Afterwards, cross the plaza to the restored Molo Mansion for souvenirs and local Molo Soup.",
-        cost: 400, // Molo soup & snacks for 4
-        notable: "Molo is the 'feminine' church (all-female saints inside). The Molo Mansion across the street is a majestic heritage villa."
+        desc: "Take a Jaro-Molo jeepney to Molo Plaza. Visit the Gothic-Renaissance Molo Church. Cross the plaza to Molo Mansion to enjoy cheap local Molo Soup.",
+        cost: 200, // Local soup snacks
+        notable: "Molo Soup at the mansion's garden stalls is cheap, warm, and highly comforting."
       },
       {
         time: "07:00 PM",
-        title: "Dinner at Breakthrough or Tatoy's",
-        desc: "Head to Villa Arevalo coastline. Dine at Breakthrough Restaurant or Tatoy's Manokan. Eat baked oysters, buttered scallops, native lechon manok, and fresh grilled red snapper (Mangagat).",
-        cost: 2000, // Rich seafood feast for 4
-        notable: "Coastal dining with fresh seafood right off the pan. Baked oysters are incredibly cheap here (~₱150 per plate)!"
+        title: "Dinner: Tatoy's or local Arevalo Seafood",
+        desc: "Head to Villa Arevalo coastline via jeepney. Dine at Tatoy's Manokan. Share a small native chicken, baked oysters, and grilled fish.",
+        cost: 1200, // Shared group dinner (₱300/pax)
+        notable: "Oysters are incredibly cheap in Iloilo (~₱150 per large plate). Order oysters and garlic rice for a highly affordable seafood feast!"
       }
     ],
     tips: "Modernized and traditional jeepneys are the lifeblood of Iloilo. Routes are labeled clearly (e.g., 'Jaro CPU', 'Molo Mandurriao'). Try riding one for the local experience!"
@@ -280,7 +280,7 @@ const ITINERARY_DATA = [
     day: 6,
     date: "June 26",
     title: "Heritage Living, Souvenirs & Flight Home",
-    description: "Spend your last day experiencing authentic Spanish-colonial lifestyle at a heritage house, buy famous Ilonggo treats, and head to the airport for your night flight back to Davao.",
+    description: "Spend your last day enjoying Pancit Molo and thick hot chocolate at a heritage house, buy affordable local treats, and take a shared airport van for your flight back to Davao.",
     accommodation: null, // Flight home tonight
     activities: [
       {
@@ -288,42 +288,42 @@ const ITINERARY_DATA = [
         title: "Camiña Balay nga Bato Tour",
         desc: "Visit a beautifully preserved 1865 ancestral stone house. Learn about Spanish-colonial lifestyle, loom weaving, and local artifacts.",
         cost: 1000, // ₱250/pax (includes guided house tour + hot batirol chocolate + Pancit Molo)
-        notable: "The highlight is sitting in their grand 'sala' sipping thick, rich chocolate made by hand in a wooden batirol."
+        notable: "This is a worthwhile student experience: the entry fee includes a rich cup of hot chocolate batirol and a bowl of Pancit Molo!"
       },
       {
         time: "11:30 AM",
-        title: "Biscocho Haus Souvenir Run",
-        desc: "Head to Jaro to buy your pasalubong: Biscocho (toasted sweet bread), Butterscotch (chewy & rich), and Barquillos.",
-        cost: 2000, // Pasalubong budget for the group
-        notable: "Iloilo's butterscotch and biscocho are widely considered the best in the country due to local dairy and baking traditions."
+        title: "Biscocho Haus Souvenir Run (Budget packs)",
+        desc: "Head to Jaro to buy your pasalubong: Biscocho and Butterscotch packs. Opt for small budget pack sizes.",
+        cost: 800, // Group souvenir budget
+        notable: "Buy small snack sizes (₱40-60 per pack) to distribute to friends without breaking the bank."
       },
       {
         time: "01:00 PM",
         title: "Lunch at Roberto's (Calle Real)",
-        desc: "Dine at a legendary local Chinese-Filipino eatery. Try their famous 'Queen Siopao' (stuffed with bacon, Chinese sausage, chicken, pork, and salted egg) or their classic pancit canton.",
-        cost: 800, // Lunch for 4 pax
-        notable: "Roberto's Siopao is a local legend; no sauce is needed because it's naturally moist and flavor-packed."
+        desc: "Dine at a legendary local Chinese-Filipino eatery. Try their famous King/Jumbo Siopao or shared Pancit Canton.",
+        cost: 500, // Budget lunch for 4 pax
+        notable: "Roberto's Jumbo Siopao (₱110) is huge, incredibly filling, and needs no sauce!"
       },
       {
         time: "03:00 PM",
-        title: "Relax at Museum of Philippine Economic History",
+        title: "Museum of Philippine Economic History",
         desc: "Visit this highly interactive, air-conditioned museum housed in the historic Elizalde building. Learn how the sugar, weaving, and shipping industries shaped the country.",
         cost: 0, // Free admission!
-        notable: "A great way to spend a hot afternoon; very informative and visually stunning."
+        notable: "Free entry for everyone! A great way to spend a hot afternoon in a fully air-conditioned heritage building."
       },
       {
         time: "06:30 PM",
-        title: "Final Dinner & Airport Transfer",
-        desc: "Have a final light dinner in the city. Retrieve your luggage from the hotel, and take a Grab/taxi to the airport for your night flight back to Davao.",
-        cost: 1400, // Grab taxi to airport (₱600) + dinner/snacks (₱800)
-        notable: "Allow 45 mins to 1 hour travel time to the airport, as it is 19km outside the city center."
+        title: "Final Dinner & Shared Airport Shuttle",
+        desc: "Have a final budget dinner in the city. Retrieve your luggage and take a shared shuttle van to the airport.",
+        cost: 1000, // Van fare ₱400 (₱100/pax) + light carenderia supper ₱600
+        notable: "Skip taxis to the airport (which charge ₱600+). Take the public airport shuttle van from SM City Iloilo transport hub for only ₱100 per person!"
       },
       {
         time: "09:30 PM",
         title: "Flight Back to Davao",
         desc: "Check-in at Iloilo International Airport and fly back to Davao, bringing home unforgettable heritage memories.",
         cost: 0,
-        notable: "Make sure you pack liquid souvenirs (like sinamak vinegar or syrup) in your checked baggage!"
+        notable: "Ensure all delicacies are packed properly. Note that Guimaras mangoes can be brought out, but no external mangoes can enter Guimaras."
       }
     ],
     tips: "Ensure all delicacies like Napoleones from Bacolod or fresh mangoes from Guimaras are packed properly. Note that Guimaras mangoes can be brought out, but no external mangoes can enter Guimaras."
@@ -339,59 +339,59 @@ const BUDGET_BREAKDOWN = {
     { id: "misc", name: "Souvenirs & Emergency", icon: "wallet", color: "#6c757d" }
   ],
   items: [
-    // Accommodation
-    { category: "accommodation", name: "Day 1: Iloilo Hotel (GT Hotel/Go Hotels)", cost: 2200, isPerPerson: false, notes: "Shared Family Room / 2 Double Rooms for 4 Pax" },
-    { category: "accommodation", name: "Day 2: Bacolod Hotel (Saltimboca Inn)", cost: 1800, isPerPerson: false, notes: "Heritage style Quad Room" },
-    { category: "accommodation", name: "Day 3: Iloilo Hotel (GT Hotel/Go Hotels)", cost: 2200, isPerPerson: false, notes: "Shared Family Room" },
-    { category: "accommodation", name: "Day 4: Guimaras Beach Resort (Raymen)", cost: 3200, isPerPerson: false, notes: "Alubihod Beachfront Quad Aircon Room" },
-    { category: "accommodation", name: "Day 5: Iloilo Hotel (GT Hotel/Go Hotels)", cost: 2200, isPerPerson: false, notes: "Shared Family Room" },
+    // Accommodation (Student Hostels/Budget Pension Houses)
+    { category: "accommodation", name: "Day 1: Iloilo Budget Hostel (Ong Bun)", cost: 1400, isPerPerson: false, notes: "Shared Quad Room for 4 Pax" },
+    { category: "accommodation", name: "Day 2: Bacolod Budget Hostel (Saltimboca)", cost: 1200, isPerPerson: false, notes: "Shared Budget Quad Room" },
+    { category: "accommodation", name: "Day 3: Iloilo Budget Hostel (Ong Bun)", cost: 1400, isPerPerson: false, notes: "Shared Quad Room" },
+    { category: "accommodation", name: "Day 4: Guimaras Beach Resort Fan Room (Raymen)", cost: 1800, isPerPerson: false, notes: "Alubihod Beachfront Quad Fan Room" },
+    { category: "accommodation", name: "Day 5: Iloilo Budget Hostel (Ong Bun)", cost: 1400, isPerPerson: false, notes: "Shared Quad Room" },
     
-    // Transportation
-    { category: "transportation", name: "Iloilo Airport to City Center Taxi (Day 1)", cost: 500, isPerPerson: false, notes: "Grab/Taxi for 4 Pax" },
-    { category: "transportation", name: "Iloilo Hotel to Port + Terminal Fee (Day 2)", cost: 270, isPerPerson: false, notes: "Taxi (₱150) + Terminal fees (₱30/pax × 4 = ₱120)" },
-    { category: "transportation", name: "Iloilo to Bacolod Ferry Tickets (Day 2)", cost: 2000, isPerPerson: false, notes: "Fastcraft (OceanJet/Weesam) - ₱500/pax × 4" },
-    { category: "transportation", name: "Bacolod Port to Hotel (Day 2)", cost: 150, isPerPerson: false, notes: "Tricycle/Grab transfer" },
-    { category: "transportation", name: "Silay Heritage Tour Tricycle Rental (Day 2)", cost: 800, isPerPerson: false, notes: "Flat-rate 'pakyaw' for 4 Pax" },
-    { category: "transportation", name: "The Ruins Roundtrip Transfer (Day 3)", cost: 300, isPerPerson: false, notes: "Grab or rented tricycle" },
-    { category: "transportation", name: "Bacolod Hotel to Port Transfer (Day 3)", cost: 150, isPerPerson: false, notes: "Tricycle transfer" },
-    { category: "transportation", name: "Bacolod to Iloilo Ferry Tickets (Day 3)", cost: 2000, isPerPerson: false, notes: "Fastcraft - ₱500/pax × 4" },
+    // Transportation (Jeepneys, Shuttle Vans & Student Ferry Vouchers)
+    { category: "transportation", name: "Airport to City Shared Van (Day 1)", cost: 400, isPerPerson: false, notes: "Shared Shuttle Van - ₱100/pax × 4" },
+    { category: "transportation", name: "Iloilo Hotel to Port + Terminal Fee (Day 2)", cost: 180, isPerPerson: false, notes: "Jeepney (₱60) + Terminal fees (₱30/pax × 4 = ₱120)" },
+    { category: "transportation", name: "Iloilo to Bacolod Ferry Student Tickets (Day 2)", cost: 1600, isPerPerson: false, notes: "OceanJet Student Rate (Bring ID!) - ₱400/pax × 4" },
+    { category: "transportation", name: "Bacolod Port to Hostel Jeepney (Day 2)", cost: 60, isPerPerson: false, notes: "Local jeepney - ₱15/pax × 4" },
+    { category: "transportation", name: "Silay Heritage Tour DIY Jeepney (Day 2)", cost: 160, isPerPerson: false, notes: "Jeepney roundtrip to Silay City - ₱40/pax × 4" },
+    { category: "transportation", name: "The Ruins Jeepney/Trike Transfer (Day 3)", cost: 160, isPerPerson: false, notes: "Jeepney to Bata + Shared Trike roundtrip" },
+    { category: "transportation", name: "Bacolod Hostel to Port Jeepney (Day 3)", cost: 60, isPerPerson: false, notes: "Local jeepney transfer" },
+    { category: "transportation", name: "Bacolod to Iloilo Ferry Student Tickets (Day 3)", cost: 1600, isPerPerson: false, notes: "OceanJet Student Rate (Bring ID!) - ₱400/pax × 4" },
     { category: "transportation", name: "Bacolod Port Terminal Fee (Day 3)", cost: 160, isPerPerson: false, notes: "₱40/pax terminal fee × 4" },
-    { category: "transportation", name: "Iloilo Port to Hotel Transfer (Day 3)", cost: 150, isPerPerson: false, notes: "Taxi/Grab" },
-    { category: "transportation", name: "Iloilo Hotel to Parola Wharf (Day 4)", cost: 150, isPerPerson: false, notes: "Taxi/Grab" },
-    { category: "transportation", name: "Iloilo to Guimaras Pumpboat (Day 4)", cost: 200, isPerPerson: false, notes: "₱50/pax pumpboat fare × 4" },
-    { category: "transportation", name: "Guimaras Tricycle Land Tour Rent (Day 4)", cost: 1800, isPerPerson: false, notes: "8-Hour chartered tricycle for 4 Pax" },
-    { category: "transportation", name: "Guimaras Island Hopping Boat (Day 5)", cost: 900, isPerPerson: false, notes: "3-Hour private boat charter (₱600 1st hr, ₱150/hr after)" },
-    { category: "transportation", name: "Guimaras Resort to Jordan Port (Day 5)", cost: 350, isPerPerson: false, notes: "Tricycle flat rate for luggage & passengers" },
-    { category: "transportation", name: "Guimaras to Iloilo Pumpboat (Day 5)", cost: 200, isPerPerson: false, notes: "₱50/pax pumpboat fare × 4" },
-    { category: "transportation", name: "Parola Wharf to Iloilo Hotel (Day 5)", cost: 150, isPerPerson: false, notes: "Taxi/Grab" },
-    { category: "transportation", name: "Iloilo City Jeepney/Taxi Tours (Day 5 & 6)", cost: 700, isPerPerson: false, notes: "Experiencing traditional double-back Iloilo jeepneys + Grab" },
-    { category: "transportation", name: "Iloilo Hotel to Airport Transfer (Day 6)", cost: 600, isPerPerson: false, notes: "Grab/Taxi to Cabatuan Airport" },
+    { category: "transportation", name: "Iloilo Port to Hostel Jeepney (Day 3)", cost: 60, isPerPerson: false, notes: "Local jeepney" },
+    { category: "transportation", name: "Iloilo Hostel to Parola Wharf Jeepney (Day 4)", cost: 60, isPerPerson: false, notes: "Local jeepney" },
+    { category: "transportation", name: "Iloilo to Guimaras Pumpboat (Day 4)", cost: 200, isPerPerson: false, notes: "Public pumpboat - ₱50/pax × 4" },
+    { category: "transportation", name: "Guimaras Tricycle Land Tour Rent (Day 4)", cost: 1500, isPerPerson: false, notes: "8-Hour chartered tricycle for 4 Pax (Student deal)" },
+    { category: "transportation", name: "Guimaras Island Hopping Boat 2-Hr (Day 5)", cost: 750, isPerPerson: false, notes: "2-Hour private boat charter (split 4 ways)" },
+    { category: "transportation", name: "Guimaras Resort to Jordan Port Jeepney/Trike (Day 5)", cost: 250, isPerPerson: false, notes: "Public jeepney/shared trike for luggage & pax" },
+    { category: "transportation", name: "Guimaras to Iloilo Pumpboat (Day 5)", cost: 200, isPerPerson: false, notes: "Public pumpboat - ₱50/pax × 4" },
+    { category: "transportation", name: "Parola Wharf to Iloilo Hotel Jeepney (Day 5)", cost: 60, isPerPerson: false, notes: "Local jeepney" },
+    { category: "transportation", name: "Iloilo City Jeepney Tours (Day 5 & 6)", cost: 300, isPerPerson: false, notes: "Experiencing traditional public jeepneys" },
+    { category: "transportation", name: "Iloilo Hostel to Airport Shared Van (Day 6)", cost: 400, isPerPerson: false, notes: "Shared Shuttle Van from SM City Hub - ₱100/pax × 4" },
 
-    // Food
-    { category: "food", name: "Day 1 Suppers (Iloilo)", cost: 600, isPerPerson: false, notes: "Light meals upon arrival" },
-    { category: "food", name: "Day 2 Lunch: El Ideal Bakery (Silay)", cost: 1000, isPerPerson: false, notes: "Heritage pastries, meals, guapple pie" },
-    { category: "food", name: "Day 2 Dinner: Manokan Country Inasal", cost: 800, isPerPerson: false, notes: "Chicken inasal, garlic rice, drinks" },
-    { category: "food", name: "Day 2 Dessert: Calea Cakes (Bacolod)", cost: 600, isPerPerson: false, notes: "Famous cakes and coffee" },
-    { category: "food", name: "Day 3 Lunch: Bacolod Local Diner", cost: 800, isPerPerson: false, notes: "Casual Bacolod food before ferry" },
-    { category: "food", name: "Day 3 Dinner: Ted's/Deco's La Paz Batchoy", cost: 600, isPerPerson: false, notes: "Authentic Batchoy bowls + puto" },
-    { category: "food", name: "Day 4 Lunch: Pitstop Mango Pizza (Guimaras)", cost: 1200, isPerPerson: false, notes: "Famous mango pizza & local dishes" },
-    { category: "food", name: "Day 4 Dinner: Alubihod Beach Seafood", cost: 1000, isPerPerson: false, notes: "Fresh beachfront dinner" },
-    { category: "food", name: "Day 5 Lunch & Mango buying (Guimaras)", cost: 900, isPerPerson: false, notes: "Quick meals + fresh mango snack at port" },
-    { category: "food", name: "Day 5 Dinner: Breakthrough / Tatoy's", cost: 2000, isPerPerson: false, notes: "Baked oysters, scallops, baked fish, native chicken" },
-    { category: "food", name: "Day 6 Lunch: Roberto's Siopao (Calle Real)", cost: 800, isPerPerson: false, notes: "Legendary giant Queen Siopao & Noodles" },
-    { category: "food", name: "Day 6 Dinners & Snacks (Airport run)", cost: 1200, isPerPerson: false, notes: "Final meal in Iloilo + travel snacks" },
+    // Food (Carenderias, Street Food & Shared Platters)
+    { category: "food", name: "Day 1 Suppers (Local Carenderia)", cost: 400, isPerPerson: false, notes: "Light local carenderia meals" },
+    { category: "food", name: "Day 2 Lunch: El Ideal Bakery (Shared pastries)", cost: 600, isPerPerson: false, notes: "Shared pastries and fresh lumpia" },
+    { category: "food", name: "Day 2 Dinner: Manokan Country Inasal", cost: 500, isPerPerson: false, notes: "Inasal breast/thigh + garlic rice" },
+    { category: "food", name: "Day 2 Dessert: Calea Cakes (Shared slices)", cost: 350, isPerPerson: false, notes: "3 slices to split among 4 pax" },
+    { category: "food", name: "Day 3 Lunch: Bacolod Local Carenderia", cost: 500, isPerPerson: false, notes: "Budget turo-turo lunch" },
+    { category: "food", name: "Day 3 Dinner: La Paz Market Batchoy", cost: 400, isPerPerson: false, notes: "Authentic Batchoy bowls inside local market" },
+    { category: "food", name: "Day 4 Lunch: Pitstop Mango Pizza (Shared)", cost: 700, isPerPerson: false, notes: "Mango pizza + budget local dishes" },
+    { category: "food", name: "Day 4 Dinner: Alubihod Beach local carenderia", cost: 800, isPerPerson: false, notes: "Fresh grilled fish/seafood outside resort gates" },
+    { category: "food", name: "Day 5 Lunch & local snacks (Guimaras)", cost: 600, isPerPerson: false, notes: "Carenderia meal + fresh mango snack at port" },
+    { category: "food", name: "Day 5 Dinner: Tatoy's (Shared set meal)", cost: 1200, isPerPerson: false, notes: "Baked oysters, native chicken, grilled fish (shared)" },
+    { category: "food", name: "Day 6 Lunch: Roberto's Siopao & Noodles", cost: 500, isPerPerson: false, notes: "Jumbo Siopao (₱110 each) + shared pansit" },
+    { category: "food", name: "Day 6 Dinners & Snacks (Travel meals)", cost: 600, isPerPerson: false, notes: "Final meal in city proper + travel snacks" },
 
-    // Activities & Entrances
-    { category: "activities", name: "Silay Heritage Houses Fees", cost: 400, isPerPerson: false, notes: "Entry fee for Balay Negrense & Hofileña (₱100/pax × 4)" },
-    { category: "activities", name: "The Ruins Entrance Fee (Talisay)", cost: 600, isPerPerson: false, notes: "₱150/pax entry × 4" },
-    { category: "activities", name: "Guisi Lighthouse & Ruins Entry Fee", cost: 200, isPerPerson: false, notes: "₱50/pax maintenance fee × 4" },
-    { category: "activities", name: "Guimaras Island Hopping Environmental Fees", cost: 500, isPerPerson: false, notes: "SEAFDEC entry + sanctuary & island docking fees" },
+    // Activities & Entrances (Student ID Discounts Applied)
+    { category: "activities", name: "Silay Heritage Houses Student Entry", cost: 200, isPerPerson: false, notes: "Student ID rate: ₱50/pax × 4" },
+    { category: "activities", name: "The Ruins Student Entry (Talisay)", cost: 400, isPerPerson: false, notes: "Student ID rate: ₱100/pax × 4" },
+    { category: "activities", name: "Guisi Lighthouse Student Entry", cost: 100, isPerPerson: false, notes: "Student ID rate: ₱25/pax × 4" },
+    { category: "activities", name: "Guimaras Island Hopping Environmental Fees", cost: 350, isPerPerson: false, notes: "SEAFDEC entry + environmental & docking fees" },
     { category: "activities", name: "Camiña Balay nga Bato House Tour & Snack", cost: 1000, isPerPerson: false, notes: "₱250/pax entry (includes guided tour + hot chocolate batirol + pancit molo)" },
 
     // Misc / Souvenirs
-    { category: "misc", name: "Pasalubong: BongBong's / Merci (Bacolod)", cost: 1000, isPerPerson: false, notes: "Napoleones, Piaya, barquillos" },
-    { category: "misc", name: "Pasalubong: Biscocho Haus (Iloilo)", cost: 1500, isPerPerson: false, notes: "Biscocho, butterscotch packs" },
-    { category: "misc", name: "Emergency / Incidentals Fund", cost: 2500, isPerPerson: false, notes: "Buffer fund for unforeseen trike/taxi/medical needs" }
+    { category: "misc", name: "Pasalubong: BongBong's / Merci (Bacolod)", cost: 600, isPerPerson: false, notes: "Street piaya and barquillos packs" },
+    { category: "misc", name: "Pasalubong: Biscocho Haus (Iloilo)", cost: 800, isPerPerson: false, notes: "Biscocho, butterscotch small packs" },
+    { category: "misc", name: "Student Incidentals / Emergency Fund", cost: 1200, isPerPerson: false, notes: "Group emergency buffer" }
   ]
 };
 
@@ -447,9 +447,9 @@ const HERITAGE_FEATURES = [
 ];
 
 const PACKING_CHECKLIST = [
-  { id: "pack-docs", text: "Flight Boarding Passes & IDs", category: "essential", checked: false },
-  { id: "pack-cash", text: "Cash in PHP (Crucial for Guimaras & Bacolod trikes)", category: "essential", checked: false },
-  { id: "pack-ferry", text: "Pre-booked Ferry Tickets (Iloilo <-> Bacolod)", category: "essential", checked: false },
+  { id: "pack-docs", text: "Flight Boarding Passes & IDs (Bring Student ID!)", category: "essential", checked: false },
+  { id: "pack-cash", text: "Cash in PHP (Crucial for local jeepneys & trikes)", category: "essential", checked: false },
+  { id: "pack-ferry", text: "Pre-booked Ferry Tickets (or check student counter)", category: "essential", checked: false },
   { id: "pack-sun", text: "Sunscreen & Sunglasses (For Guimaras beach)", category: "clothing", checked: false },
   { id: "pack-swim", text: "Swimwear & Rashguards (For Alubihod island hopping)", category: "clothing", checked: false },
   { id: "pack-shoes", text: "Comfortable walking shoes (For Silay & Calle Real walks)", category: "clothing", checked: false },
@@ -461,14 +461,14 @@ const PACKING_CHECKLIST = [
 
 const TRAVEL_GUIDE_TIPS = {
   ferryInfo: [
-    { operator: "OceanJet", route: "Iloilo to Bacolod", schedule: "Daily: 6:00 AM, 8:50 AM, 11:30 AM, 2:10 PM, 4:50 PM", duration: "1 Hour", contact: "oceanjet.net" },
-    { operator: "Weesam Express", route: "Iloilo to Bacolod", schedule: "Daily: 6:30 AM, 9:30 AM, 12:30 PM, 3:30 PM", duration: "1 Hour", contact: "facebook.com/weesamexpress" },
+    { operator: "OceanJet", route: "Iloilo to Bacolod", schedule: "Daily: 6:00 AM, 8:50 AM, 11:30 AM, 2:10 PM, 4:50 PM", duration: "1 Hour", contact: "oceanjet.net (Ask for Student Discount at window)" },
+    { operator: "Weesam Express", route: "Iloilo to Bacolod", schedule: "Daily: 6:30 AM, 9:30 AM, 12:30 PM, 3:30 PM", duration: "1 Hour", contact: "facebook.com/weesamexpress (Ask for Student Discount)" },
     { operator: "Jordan Pumpboat", route: "Iloilo (Parola) to Guimaras (Jordan)", schedule: "Every 15-30 minutes (6:00 AM - 6:00 PM)", duration: "15 Minutes", contact: "No pre-booking needed, pay at wharf" }
   ],
   localContacts: [
     { name: "Guimaras Tricycle Land Tour Association", role: "Tricycle Tours from Jordan Port", contact: "Standard Rates: ₱1,500 - ₱1,800. Walk-in at Jordan Port Tourist Center." },
     { name: "Alubihod Boat Association", role: "Island Hopping from Alubihod Beach", contact: "Direct booking at Raymen Resort or Alubihod Beach station. Standardized rates." },
-    { name: "Grab Car Iloilo & Bacolod", role: "City Transportation", contact: "Use Grab App in Bacolod and Iloilo City. (Note: No Grab in Guimaras!)" }
+    { name: "Public Jeepneys Iloilo & Bacolod", role: "City Transportation", contact: "Use standard routes like 'Jaro CPU' or 'Molo Mandurriao' for only ₱15/pax." }
   ],
   culturalDoDonts: [
     { title: "Mango Protection in Guimaras", content: "DO NOT bring any outside mangoes into Guimaras. This is strictly illegal to protect their crops from the Mango Pulp Weevil. Bags are inspected at the port." },
