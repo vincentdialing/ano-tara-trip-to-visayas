@@ -202,8 +202,10 @@ body {
 }
 
 .route-arrow {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------------------------------------
@@ -1399,3 +1401,30 @@ body {
   0%, 80%, 100% { transform: scale(0.3); opacity: 0.3; }
   40% { transform: scale(1.0); opacity: 1; }
 }
+
+/* Custom SVG Icon Styling (replaces emojis) */
+.meta-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.meta-svg {
+  width: 14px;
+  height: 14px;
+  stroke-width: 2.5;
+}
+
+.route-icon {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+
+.warning-icon {
+  color: var(--mango-color);
+}
+
